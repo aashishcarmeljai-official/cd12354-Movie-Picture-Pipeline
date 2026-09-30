@@ -33,7 +33,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-printf '[default]\nregion = us-east-1\noutput = json\n' > ~/.aws/config
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
