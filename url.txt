@@ -1,0 +1,2 @@
+Frontend URL -> http://a52b23471d7ec474ba3f845cc873ec17-413006509.us-east-1.elb.amazonaws.com/?
+Backend URL -> http://ab8c6498452db422f8ccbcdad9bfc10c-2014939354.us-east-1.elb.amazonaws.com/movies?

@@ -13,3 +13,6 @@ build/
 eks-describe.json
 smoke-source.json
 codebuild-trust.json
+
+.aws
+test.sh
