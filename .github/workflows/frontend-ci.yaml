@@ -33,7 +33,7 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
-
+printf '[default]\nregion = us-east-1\noutput = json\n' > ~/.aws/config
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -51,7 +51,7 @@ jobs:
 
       - name: Run tests
         working-directory: starter/frontend
-        run: CI=true npm test -- --watchAll=false
+        run: CI=true npm run test -- --watchAll=false
 
   build:
     needs:
@@ -76,7 +76,7 @@ jobs:
 
       - name: Run tests
         working-directory: starter/frontend
-        run: CI=true npm test -- --watchAll=false
+        run: CI=true npm run test -- --watchAll=false
 
       - name: Build Docker image
         working-directory: starter/frontend
